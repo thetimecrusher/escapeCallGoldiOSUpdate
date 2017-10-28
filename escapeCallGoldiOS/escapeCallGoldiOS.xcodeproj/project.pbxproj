@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE1328CF1F8ECFE900B46561 /* SelectPhoneTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1328CE1F8ECFE900B46561 /* SelectPhoneTypeVC.swift */; };
+		AE1328D31F8EDAD000B46561 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1328D21F8EDAD000B46561 /* AudioToolbox.framework */; };
+		AE1328D51F8EDC5100B46561 /* RecorderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1328D41F8EDC5100B46561 /* RecorderVC.swift */; };
+		AE7075921F8879550024BABE /* LoadCustomCallersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7075911F8879550024BABE /* LoadCustomCallersVC.swift */; };
+		AE7075981F8B156B0024BABE /* callScreenWithImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AE7075971F8B156B0024BABE /* callScreenWithImage.png */; };
+		AE70759A1F8B15740024BABE /* answerScreenWithImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AE7075991F8B15740024BABE /* answerScreenWithImage.png */; };
+		AE70759C1F8B602F0024BABE /* apple_ring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE70759B1F8B602F0024BABE /* apple_ring.mp3 */; };
+		AE7075A21F8B60400024BABE /* deadpool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE70759D1F8B60400024BABE /* deadpool.mp3 */; };
+		AE7075A31F8B60400024BABE /* despacito.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE70759E1F8B60400024BABE /* despacito.mp3 */; };
+		AE7075A41F8B60400024BABE /* remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE70759F1F8B60400024BABE /* remix.mp3 */; };
+		AE7075A51F8B60400024BABE /* ring_plus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE7075A01F8B60400024BABE /* ring_plus.mp3 */; };
+		AE7075A61F8B60400024BABE /* shape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE7075A11F8B60400024BABE /* shape.mp3 */; };
+		AE91A1571F82F17A0001BD66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1561F82F17A0001BD66 /* AppDelegate.swift */; };
+		AE91A1591F82F17A0001BD66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1581F82F17A0001BD66 /* ViewController.swift */; };
+		AE91A15C1F82F17A0001BD66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE91A15A1F82F17A0001BD66 /* Main.storyboard */; };
+		AE91A15F1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE91A15D1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodeld */; };
+		AE91A1611F82F17A0001BD66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE91A1601F82F17A0001BD66 /* Assets.xcassets */; };
+		AE91A1641F82F17A0001BD66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE91A1621F82F17A0001BD66 /* LaunchScreen.storyboard */; };
+		AE91A16C1F82F4150001BD66 /* fromContacts.png in Resources */ = {isa = PBXBuildFile; fileRef = AE91A16B1F82F4150001BD66 /* fromContacts.png */; };
+		AE91A16E1F82F41B0001BD66 /* createContact.png in Resources */ = {isa = PBXBuildFile; fileRef = AE91A16D1F82F41B0001BD66 /* createContact.png */; };
+		AE91A1701F82F43B0001BD66 /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = AE91A16F1F82F43B0001BD66 /* addImage.png */; };
+		AE91A1721F82F46B0001BD66 /* CallSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1711F82F46B0001BD66 /* CallSettingsVC.swift */; };
+		AE91A1741F82F4F40001BD66 /* CustomContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1731F82F4F40001BD66 /* CustomContactVC.swift */; };
+		AE91A1781F881A020001BD66 /* BlackScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1771F881A020001BD66 /* BlackScreenViewController.swift */; };
+		AE91A17C1F8820960001BD66 /* callScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = AE91A17B1F8820960001BD66 /* callScreen.png */; };
+		AE91A17E1F88209A0001BD66 /* answerScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = AE91A17D1F88209A0001BD66 /* answerScreen.png */; };
+		AE91A1801F88209F0001BD66 /* default.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AE91A17F1F88209F0001BD66 /* default.mp3 */; };
+		AE91A1821F8820D90001BD66 /* CallScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1811F8820D90001BD66 /* CallScreenVC.swift */; };
+		AE91A1841F8820DD0001BD66 /* AnswerScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE91A1831F8820DD0001BD66 /* AnswerScreenVC.swift */; };
+		AEB6296E1F92E8840077EA46 /* female.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEB6296D1F92E8840077EA46 /* female.mp3 */; };
+		AEB629701F92E8D00077EA46 /* male.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AEB6296F1F92E8D00077EA46 /* male.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE1328CE1F8ECFE900B46561 /* SelectPhoneTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhoneTypeVC.swift; sourceTree = "<group>"; };
+		AE1328D01F8EDAD000B46561 /* escapeCallGoldiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = escapeCallGoldiOS.entitlements; sourceTree = "<group>"; };
+		AE1328D21F8EDAD000B46561 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AE1328D41F8EDC5100B46561 /* RecorderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderVC.swift; sourceTree = "<group>"; };
+		AE7075911F8879550024BABE /* LoadCustomCallersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadCustomCallersVC.swift; sourceTree = "<group>"; };
+		AE7075971F8B156B0024BABE /* callScreenWithImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callScreenWithImage.png; sourceTree = "<group>"; };
+		AE7075991F8B15740024BABE /* answerScreenWithImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerScreenWithImage.png; sourceTree = "<group>"; };
+		AE70759B1F8B602F0024BABE /* apple_ring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple_ring.mp3; sourceTree = "<group>"; };
+		AE70759D1F8B60400024BABE /* deadpool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deadpool.mp3; sourceTree = "<group>"; };
+		AE70759E1F8B60400024BABE /* despacito.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = despacito.mp3; sourceTree = "<group>"; };
+		AE70759F1F8B60400024BABE /* remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = remix.mp3; sourceTree = "<group>"; };
+		AE7075A01F8B60400024BABE /* ring_plus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ring_plus.mp3; sourceTree = "<group>"; };
+		AE7075A11F8B60400024BABE /* shape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shape.mp3; sourceTree = "<group>"; };
+		AE91A1531F82F17A0001BD66 /* escapeCallGoldiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = escapeCallGoldiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE91A1561F82F17A0001BD66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE91A1581F82F17A0001BD66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE91A15B1F82F17A0001BD66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE91A15E1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = escapeCallBetaiOS.xcdatamodel; sourceTree = "<group>"; };
+		AE91A1601F82F17A0001BD66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE91A1631F82F17A0001BD66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE91A1651F82F17A0001BD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE91A16B1F82F4150001BD66 /* fromContacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fromContacts.png; sourceTree = "<group>"; };
+		AE91A16D1F82F41B0001BD66 /* createContact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createContact.png; sourceTree = "<group>"; };
+		AE91A16F1F82F43B0001BD66 /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
+		AE91A1711F82F46B0001BD66 /* CallSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallSettingsVC.swift; sourceTree = "<group>"; };
+		AE91A1731F82F4F40001BD66 /* CustomContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomContactVC.swift; sourceTree = "<group>"; };
+		AE91A1771F881A020001BD66 /* BlackScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackScreenViewController.swift; sourceTree = "<group>"; };
+		AE91A17B1F8820960001BD66 /* callScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = callScreen.png; sourceTree = "<group>"; };
+		AE91A17D1F88209A0001BD66 /* answerScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = answerScreen.png; sourceTree = "<group>"; };
+		AE91A17F1F88209F0001BD66 /* default.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = default.mp3; sourceTree = "<group>"; };
+		AE91A1811F8820D90001BD66 /* CallScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallScreenVC.swift; sourceTree = "<group>"; };
+		AE91A1831F8820DD0001BD66 /* AnswerScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerScreenVC.swift; sourceTree = "<group>"; };
+		AEB6296D1F92E8840077EA46 /* female.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = female.mp3; sourceTree = "<group>"; };
+		AEB6296F1F92E8D00077EA46 /* male.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = male.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE91A1501F82F17A0001BD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE1328D31F8EDAD000B46561 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE1328D11F8EDAD000B46561 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1328D21F8EDAD000B46561 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE91A14A1F82F17A0001BD66 = {
+			isa = PBXGroup;
+			children = (
+				AE91A1551F82F17A0001BD66 /* escapeCallReleaseCandidateiOS */,
+				AE91A1541F82F17A0001BD66 /* Products */,
+				AE1328D11F8EDAD000B46561 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE91A1541F82F17A0001BD66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE91A1531F82F17A0001BD66 /* escapeCallGoldiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE91A1551F82F17A0001BD66 /* escapeCallReleaseCandidateiOS */ = {
+			isa = PBXGroup;
+			children = (
+				AE1328D01F8EDAD000B46561 /* escapeCallGoldiOS.entitlements */,
+				AE91A1561F82F17A0001BD66 /* AppDelegate.swift */,
+				AE91A1581F82F17A0001BD66 /* ViewController.swift */,
+				AE91A15A1F82F17A0001BD66 /* Main.storyboard */,
+				AE91A1601F82F17A0001BD66 /* Assets.xcassets */,
+				AE91A1621F82F17A0001BD66 /* LaunchScreen.storyboard */,
+				AE91A1711F82F46B0001BD66 /* CallSettingsVC.swift */,
+				AE91A1771F881A020001BD66 /* BlackScreenViewController.swift */,
+				AE91A1731F82F4F40001BD66 /* CustomContactVC.swift */,
+				AE1328CE1F8ECFE900B46561 /* SelectPhoneTypeVC.swift */,
+				AE7075911F8879550024BABE /* LoadCustomCallersVC.swift */,
+				AE1328D41F8EDC5100B46561 /* RecorderVC.swift */,
+				AE91A1811F8820D90001BD66 /* CallScreenVC.swift */,
+				AE91A1831F8820DD0001BD66 /* AnswerScreenVC.swift */,
+				AE91A1651F82F17A0001BD66 /* Info.plist */,
+				AE91A15D1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodeld */,
+				AEB6296F1F92E8D00077EA46 /* male.mp3 */,
+				AEB6296D1F92E8840077EA46 /* female.mp3 */,
+				AE91A17F1F88209F0001BD66 /* default.mp3 */,
+				AE70759B1F8B602F0024BABE /* apple_ring.mp3 */,
+				AE70759D1F8B60400024BABE /* deadpool.mp3 */,
+				AE70759E1F8B60400024BABE /* despacito.mp3 */,
+				AE70759F1F8B60400024BABE /* remix.mp3 */,
+				AE7075A01F8B60400024BABE /* ring_plus.mp3 */,
+				AE7075A11F8B60400024BABE /* shape.mp3 */,
+				AE91A16B1F82F4150001BD66 /* fromContacts.png */,
+				AE91A16D1F82F41B0001BD66 /* createContact.png */,
+				AE91A16F1F82F43B0001BD66 /* addImage.png */,
+				AE91A17B1F8820960001BD66 /* callScreen.png */,
+				AE91A17D1F88209A0001BD66 /* answerScreen.png */,
+				AE7075971F8B156B0024BABE /* callScreenWithImage.png */,
+				AE7075991F8B15740024BABE /* answerScreenWithImage.png */,
+			);
+			name = escapeCallReleaseCandidateiOS;
+			path = escapeCallGoldiOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE91A1521F82F17A0001BD66 /* escapeCallGoldiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE91A1681F82F17A0001BD66 /* Build configuration list for PBXNativeTarget "escapeCallGoldiOS" */;
+			buildPhases = (
+				AE91A14F1F82F17A0001BD66 /* Sources */,
+				AE91A1501F82F17A0001BD66 /* Frameworks */,
+				AE91A1511F82F17A0001BD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = escapeCallGoldiOS;
+			productName = escapeCallBetaiOS;
+			productReference = AE91A1531F82F17A0001BD66 /* escapeCallGoldiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE91A14B1F82F17A0001BD66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = KeithFawcett;
+				TargetAttributes = {
+					AE91A1521F82F17A0001BD66 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7866Q9ZXS2;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AE91A14E1F82F17A0001BD66 /* Build configuration list for PBXProject "escapeCallGoldiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE91A14A1F82F17A0001BD66;
+			productRefGroup = AE91A1541F82F17A0001BD66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE91A1521F82F17A0001BD66 /* escapeCallGoldiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE91A1511F82F17A0001BD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE91A17C1F8820960001BD66 /* callScreen.png in Resources */,
+				AE7075A41F8B60400024BABE /* remix.mp3 in Resources */,
+				AEB6296E1F92E8840077EA46 /* female.mp3 in Resources */,
+				AE91A1801F88209F0001BD66 /* default.mp3 in Resources */,
+				AE91A1641F82F17A0001BD66 /* LaunchScreen.storyboard in Resources */,
+				AE7075A61F8B60400024BABE /* shape.mp3 in Resources */,
+				AE91A1611F82F17A0001BD66 /* Assets.xcassets in Resources */,
+				AE70759A1F8B15740024BABE /* answerScreenWithImage.png in Resources */,
+				AE91A17E1F88209A0001BD66 /* answerScreen.png in Resources */,
+				AE91A16C1F82F4150001BD66 /* fromContacts.png in Resources */,
+				AE91A16E1F82F41B0001BD66 /* createContact.png in Resources */,
+				AE7075A51F8B60400024BABE /* ring_plus.mp3 in Resources */,
+				AE7075981F8B156B0024BABE /* callScreenWithImage.png in Resources */,
+				AE70759C1F8B602F0024BABE /* apple_ring.mp3 in Resources */,
+				AE91A15C1F82F17A0001BD66 /* Main.storyboard in Resources */,
+				AE7075A31F8B60400024BABE /* despacito.mp3 in Resources */,
+				AE91A1701F82F43B0001BD66 /* addImage.png in Resources */,
+				AEB629701F92E8D00077EA46 /* male.mp3 in Resources */,
+				AE7075A21F8B60400024BABE /* deadpool.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE91A14F1F82F17A0001BD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE91A1841F8820DD0001BD66 /* AnswerScreenVC.swift in Sources */,
+				AE91A1781F881A020001BD66 /* BlackScreenViewController.swift in Sources */,
+				AE7075921F8879550024BABE /* LoadCustomCallersVC.swift in Sources */,
+				AE91A1591F82F17A0001BD66 /* ViewController.swift in Sources */,
+				AE91A1821F8820D90001BD66 /* CallScreenVC.swift in Sources */,
+				AE91A1741F82F4F40001BD66 /* CustomContactVC.swift in Sources */,
+				AE91A1721F82F46B0001BD66 /* CallSettingsVC.swift in Sources */,
+				AE1328D51F8EDC5100B46561 /* RecorderVC.swift in Sources */,
+				AE91A1571F82F17A0001BD66 /* AppDelegate.swift in Sources */,
+				AE91A15F1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodeld in Sources */,
+				AE1328CF1F8ECFE900B46561 /* SelectPhoneTypeVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE91A15A1F82F17A0001BD66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE91A15B1F82F17A0001BD66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE91A1621F82F17A0001BD66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE91A1631F82F17A0001BD66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE91A1661F82F17A0001BD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE91A1671F82F17A0001BD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE91A1691F82F17A0001BD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = escapeCallGoldiOS/escapeCallGoldiOS.entitlements;
+				DEVELOPMENT_TEAM = 7866Q9ZXS2;
+				INFOPLIST_FILE = escapeCallGoldiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keithFawcett.escapeCallGoldiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		AE91A16A1F82F17A0001BD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = escapeCallGoldiOS/escapeCallGoldiOS.entitlements;
+				DEVELOPMENT_TEAM = 7866Q9ZXS2;
+				INFOPLIST_FILE = escapeCallGoldiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.keithFawcett.escapeCallGoldiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE91A14E1F82F17A0001BD66 /* Build configuration list for PBXProject "escapeCallGoldiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE91A1661F82F17A0001BD66 /* Debug */,
+				AE91A1671F82F17A0001BD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE91A1681F82F17A0001BD66 /* Build configuration list for PBXNativeTarget "escapeCallGoldiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE91A1691F82F17A0001BD66 /* Debug */,
+				AE91A16A1F82F17A0001BD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE91A15D1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE91A15E1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodel */,
+			);
+			currentVersion = AE91A15E1F82F17A0001BD66 /* escapeCallBetaiOS.xcdatamodel */;
+			path = escapeCallBetaiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE91A14B1F82F17A0001BD66 /* Project object */;
+}
